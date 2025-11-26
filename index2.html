@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <img class="logo-img" src="./img/duck.png" alt="duck logo image">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Catalogo Libri</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Help</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <main class="container">
+        <section class="row">
+             <div class="col-12">
+                <h2 class="mb-3 mt-3">Nuovo Libro</h2>
+            </div>
+        </section>
+        <form class="row">
+            <div class="mb-3 col-6">
+                <label for="Name" class="form-label">Nome Autore</label>
+                <input type="Name" class="form-control" id="exampleInputName" placeholder="Inserisci il nome dell'autore">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="surname" class="form-label">Cognome Autore</label>
+                <input type="surname" class="form-control" placeholder="Inserisci il cognome">
+            </div>
+            <div class="mb-3 col-12">
+                <label for="Title" class="form-label">Titolo</label>
+                <input type="Title" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Inserisci il titolo del libro">
+                <div id="titleHelp" class="form-text">Titolo versione italiana</div>
+            </div>
+            <div class="mb-3 col-12 col-lg-4">
+                <label for="gender" class="form-label">Genere</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Scegli il genere</option>
+                    <option value="1">Maschile</option>
+                    <option value="2">Femminile</option>
+                </select>
+            </div>
+            <div class="mb-3 col-12 col-lg-4">
+                <label for="year" class="form-label">Anno di Publicazione</label>
+                <input type="year" class="form-control" placeholder="Inserisci l'anno">
+            </div>
+            <div class="mb-3 col-12 col-lg-4">
+                <label for="ISBN#" class="form-label">Inserisci il codice ISBN#</label>
+                <input type="ISBN#" class="form-control" placeholder="Inserisci il codice ISBN#">
+            </div>
+            <hr class="mt-4">
+            <div class="mb-3 col-12"></div>
+                <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+            </div>
+            <div class="mb-3 ms-2 form-check py-3">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+            </div>
+            <div><button type="submit" class="btn btn-primary">Aggiungi Libro</button></div>
+        </form>
+    </main>
+</body>
+</html>
